@@ -21,6 +21,7 @@
     </head>
 
     <body>
+        <script>
         const soundChair = new buzz.sound ("sfx/sfx_chair.wav")
         const soundTable = new buzz.sound ("sfx/sfx_table.wav")
         const soundMicrowave = new buzz.sound ("sfx/sfx_microwave.wav")
@@ -51,8 +52,8 @@
                 .onpointerdown = () => soundExhaust.play ()
             document.getElementById ("counter")
                 .onpointerdown = () => soundCounter.play ()
-
         } 
+        </script>
         
         <div class="row">
             <div class="image-container"><img id="chair" src="img/icon_chair.png" onmouseover="this.src='gif/icon_chair_hover.gif';" onmouseout="this.src='img/icon_chair.png';" height="200" width="200"/></div>
@@ -71,7 +72,5 @@
             <div class="image-container"><img id="exhaust" src="img/icon_exhaust.png" onmouseover="this.src='gif/icon_exhaust_hover.gif';" onmouseout="this.src='img/icon_exhaust.png';"height="200" width="200"/></div>
             <div class="image-container"><img id="counter" src="img/icon_counter.png" onmouseover="this.src='gif/icon_counter_hover.gif';" onmouseout="this.src='img/icon_counter.png';"height="200" width="200"/></div>
         </div>
-        
     </body>
-    
 </html>
