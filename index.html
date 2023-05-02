@@ -17,26 +17,59 @@
                 background-color: black;
             }
         </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
     </head>
 
     <body>
+        const soundChair = new buzz.sound ("sfx/sfx_chair.wav")
+        const soundTable = new buzz.sound ("sfx/sfx_table.wav")
+        const soundMicrowave = new buzz.sound ("sfx/sfx_microwave.wav")
+        const soundFridge = new buzz.sound ("sfx/sfx_fridge.wav")
+        const soundOven = new buzz.sound ("sfx/sfx_oven.wav")
+        const soundDishwasher = new buzz.sound ("sfx/sfx_dishwasher.wav")
+        const soundStove = new buzz.sound ("sfx/sfx_stove.wav")
+        const soundExhaust = new buzz.sound ("sfx/sfx_exhaust.wav")
+        const soundCounter = new buzz.sound ("sfx/sfx_counter.wav")
+        
+        window.onload = () => {
 
+        document.getElementById ("chair")
+            .onpointerdown = () => soundChair.play ()
+        document.getElementById ("table")
+            .onpointerdown = () => soundTable.play ()
+        document.getElementById ("microwave")
+            .onpointerdown = () => soundMicrowave.play ()
+        document.getElementById ("fridge")
+            .onpointerdown = () => soundFridge.play ()
+        document.getElementById ("oven")
+            .onpointerdown = () => soundOven.play ()
+        document.getElementById ("dishwasher")
+            .onpointerdown = () => soundDishwasher.play ()
+        document.getElementById ("stove")
+            .onpointerdown = () => soundStove.play ()
+        document.getElementById ("exhaust")
+            .onpointerdown = () => soundExhaust.play ()
+        document.getElementById ("counter")
+            .onpointerdown = () => soundCounter.play ()
+
+        } 
+        
         <div class="row">
-            <div class="image-container"><img src="img/icon_chair.png" onmouseover="this.src='gif/icon_chair_hover.gif';" onmouseout="this.src='img/icon_chair.png';" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_table.png" onmouseover="this.src='gif/icon_table_hover.gif';" onmouseout="this.src='img/icon_table.png';"height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_microwave.png" onmouseover="this.src='gif/icon_microwave_hover.gif';" onmouseout="this.src='img/icon_microwave.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="chair" src="img/icon_chair.png" onmouseover="this.src='gif/icon_chair_hover.gif';" onmouseout="this.src='img/icon_chair.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="table" src="img/icon_table.png" onmouseover="this.src='gif/icon_table_hover.gif';" onmouseout="this.src='img/icon_table.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="microwave" rc="img/icon_microwave.png" onmouseover="this.src='gif/icon_microwave_hover.gif';" onmouseout="this.src='img/icon_microwave.png';"height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/icon_fridge.png" onmouseover="this.src='gif/icon_fridge_hover.gif';" onmouseout="this.src='img/icon_fridge.png';"height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_oven.png" onmouseover="this.src='gif/icon_oven_hover.gif';" onmouseout="this.src='img/icon_oven.png';"height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_dishwasher.png" onmouseover="this.src='gif/icon_dishwasher_hover.gif';" onmouseout="this.src='img/icon_dishwasher.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="fridge" src="img/icon_fridge.png" onmouseover="this.src='gif/icon_fridge_hover.gif';" onmouseout="this.src='img/icon_fridge.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="oven" src="img/icon_oven.png" onmouseover="this.src='gif/icon_oven_hover.gif';" onmouseout="this.src='img/icon_oven.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="dishwasher" src="img/icon_dishwasher.png" onmouseover="this.src='gif/icon_dishwasher_hover.gif';" onmouseout="this.src='img/icon_dishwasher.png';"height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/icon_stove.png" onmouseover="this.src='gif/icon_stove_hover.gif';" onmouseout="this.src='img/icon_stove.png';"height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_exhaust.png" onmouseover="this.src='gif/icon_exhaust_hover.gif';" onmouseout="this.src='img/icon_exhaust.png';"height="200" width="200"/></div>
-            <div class="image-container"><img src="img/icon_counter.png" onmouseover="this.src='gif/icon_counter_hover.gif';" onmouseout="this.src='img/icon_counter.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="stove" src="img/icon_stove.png" onmouseover="this.src='gif/icon_stove_hover.gif';" onmouseout="this.src='img/icon_stove.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="exhaust" src="img/icon_exhaust.png" onmouseover="this.src='gif/icon_exhaust_hover.gif';" onmouseout="this.src='img/icon_exhaust.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="counter" src="img/icon_counter.png" onmouseover="this.src='gif/icon_counter_hover.gif';" onmouseout="this.src='img/icon_counter.png';"height="200" width="200"/></div>
         </div>
         
     </body>
